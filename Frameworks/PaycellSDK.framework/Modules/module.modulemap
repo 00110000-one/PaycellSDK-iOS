@@ -1,0 +1,6 @@
+framework module PaycellSDK {
+  umbrella header "PaycellSDK.h"
+
+  export *
+  module * { export * }
+}
