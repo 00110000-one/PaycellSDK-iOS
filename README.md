@@ -1,10 +1,13 @@
 Paycell iOS SDK
 ===============
-[![CocoaPods](https://img.shields.io/cocoapods/v/PaycellSDK.svg?maxAge=2592000)]() [![CocoaPods](https://img.shields.io/cocoapods/l/PaycellSDK.svg?maxAge=2592000)]() [![CocoaPods](https://img.shields.io/cocoapods/p/PaycellSDK.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/PaycellSDK.svg?maxAge=3600&style=flat-square)]()  [![CocoaPods](https://img.shields.io/cocoapods/l/PaycellSDK.svg?maxAge=2592000&style=flat-square)]()  [![CocoaPods](https://img.shields.io/cocoapods/p/PaycellSDK.svg?maxAge=2592000&style=flat-square)]()
 
 Kullanici isyeri uygulamasinda odeme gerceklestirilecek adimda “Paycell ile odeme yapmak istiyorum.” secildiginde [Paycell](https://www.paycell.com.tr) ekranlarina yonlendirilerek telefon numarasina kayitli odeme methodlari uzerinden veya yeni odeme methodu ekleyerek odeme yapmasini saglayan SDK’dir. SDK'nin amaci odeme islemini [Paycell](https://www.paycell.com.tr) araciligi ile bitirip kullanici isyeri uygulamasina islem sonucu hakkinda geri donus saglamaktir.
 
 ## Release Notes
+
+##### v0.9.2
+README dosyasi guncellendi
 
 ##### v0.9.1
 README dosyasi eklendi
@@ -52,14 +55,14 @@ Kredi karti taramasinda kullanilmak uzere alinacak kamera izni metni uygulamanin
 Daha sonra asagidaki iki yontemden biri secilerek entegrasyon tamamlanir.
 
 
-#### Cocoapods ile entegrasyon
+##### Cocoapods ile entegrasyon;
 Podfile'a eklenerek entegrasyon yapilabilir.
 
 ```
   pod 'PaycellSDK'
 ```
 
-#### Elle entegrasyon
+##### Elle entegrasyon;
 Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
 
@@ -80,21 +83,21 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
 ## Ornek Kod
 
-* ###**PaycellPaymentConfigurator ayarlanmalidir.**
+* **PaycellPaymentConfigurator ayarlanmalidir.**
 
 
 ```
-| ----------------------------------------------------------------------------------------------------- |
-| Parametre adi | Aciklama                                                                              |
-| ------------- | ------------------------------------------------------------------------------------- |
-| merchantCode  | Uye isyeri icin paylasilacaktir.                                                      |
-| terminalCode  | Uye isyeri icin paylasilacaktir.                                                      |
-| secureCode    | Uye isyeri icin paylasilacaktir.                                                      |
-| language      | SDK’nin dil degeridir.                                                                |
-| hostAccount   | Uye isyeri uygulamasinda odemeyi yapan kullaniciyi tekil olarak ifade eden degerdir.  |
-| merchantLogo  | SDK’da kullanilacak logodur.                                                          |
-| environment   | Demo, Test ve Live ortam parametresi                                                  |
-| ----------------------------------------------------------------------------------------------------- |
+| ---------------------------------------------------------------------------------------- |
+| Parametre adi | Aciklama                                                                 |
+| ------------- | ------------------------------------------------------------------------ |
+| merchantCode  | Uye isyeri icin paylasilacaktir.                                         |
+| terminalCode  | Uye isyeri icin paylasilacaktir.                                         |
+| secureCode    | Uye isyeri icin paylasilacaktir.                                         |
+| language      | SDK’nin dil degeridir.                                                   |
+| hostAccount   | Uye isyeri uygulamasinda odemeyi yapan kullaniciyi ifade eden degerdir.  |
+| merchantLogo  | SDK’da kullanilacak logodur.                                             |
+| environment   | Demo, Test ve Live ortam parametresi                                     |
+| ---------------------------------------------------------------------------------------- |
 ```
 
 
@@ -113,7 +116,7 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
  Not: Uye isyeri uygulamasinda kullanici dogrulamasi mail adresi ile yapiliyorsa -hostAccount- alaninda mail adresi gonderilebilir.
 ```
 
-* ###**Odeme olusturulmadan once Taksit veya DCB’ye ozel farkli odeme tutari var ise bunlar PaycellInstallment olarak olusturulmalidir.**
+* **Odeme olusturulmadan once Taksit veya DCB’ye ozel farkli odeme tutari var ise bunlar PaycellInstallment olarak olusturulmalidir.**
 
 
 ```
@@ -140,7 +143,7 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
 
 
-* ###**PaycellPayment Objesi olusturulmalidir.**
+* **PaycellPayment Objesi olusturulmalidir.**
 
 
 ```
@@ -167,10 +170,10 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
 
 
-* ###**Uygulama icinde odemenin alinacagi sayfada “PaycellPaymentDelegate” delege olarak eklenmelidir.**
+* **Uygulama icinde odemenin alinacagi sayfada “PaycellPaymentDelegate” delege olarak eklenmelidir.**
 
 
-* ###**PaycellPaymentViewController initlenerek ekranda present edilir.**
+* **PaycellPaymentViewController initlenerek ekranda present edilir.**
 
 
 
@@ -185,7 +188,7 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
 
 
-* ###**PaycellPaymentDelegate delegelerinde cevap beklenir ve *dismissViewControllerAnimated:completion:* ile PaycellPaymentViewController’in kapatilmasi saglanir.**
+* **PaycellPaymentDelegate delegelerinde cevap beklenir ve *dismissViewControllerAnimated:completion:* ile PaycellPaymentViewController’in kapatilmasi saglanir.**
 
 
 
