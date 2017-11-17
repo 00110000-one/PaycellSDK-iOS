@@ -4,17 +4,6 @@ Paycell iOS SDK
 
 Kullanici isyeri uygulamasinda odeme gerceklestirilecek adimda “Paycell ile odeme yapmak istiyorum.” secildiginde [Paycell](https://www.paycell.com.tr) ekranlarina yonlendirilerek telefon numarasina kayitli odeme methodlari uzerinden veya yeni odeme methodu ekleyerek odeme yapmasini saglayan SDK’dir. SDK'nin amaci odeme islemini [Paycell](https://www.paycell.com.tr) araciligi ile bitirip kullanici isyeri uygulamasina islem sonucu hakkinda geri donus saglamaktir.
 
-## Release Notes
-
-##### v0.9.2
-README dosyasi guncellendi
-
-##### v0.9.1
-README dosyasi eklendi
-
-##### v0.9
-Ilk versiyon
-
 ## Installation
 Kredi karti taramasinda kullanilmak uzere alinacak kamera izni metni uygulamanin plist dosyasina eklenir (**NSCameraUsageDescription**). 
 
