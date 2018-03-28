@@ -1,5 +1,15 @@
 Paycell iOS SDK
 ===============
+## -- 0.9.5 -- (28.03.2018)
+
+##### Enhancements
+
+* None
+
+##### Bug Fixes
+
+* Klavye hatasi duzeltildi.
+
 ## -- 0.9.4 -- (12.12.2017)
 
 ##### Enhancements
