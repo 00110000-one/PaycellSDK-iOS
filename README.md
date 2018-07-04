@@ -185,7 +185,8 @@ Paycell SDK'yi projeye eklemek icin PaycellSDK.framework proje icine eklenir.
 
  * PaycellErrorCodeUserCancelled -> Kullanici SDK dan islemi tamamlamadan cikarsa donecek hata kodu
  * PaycellErrorCodeException -> SDK icinde exception alinmasi durumunda donecek hata kodu
-
+ * PaycellTimeoutCodeException -> Uygulamada timeout suresi doldugunda donecek hata kodu
+ * PaycellTimeoutAfterPaymentCodeException -> Odeme isleminden sonra timeout suresi doldugunda donecek hata kodu
 
 
 ## Ek bilgiler

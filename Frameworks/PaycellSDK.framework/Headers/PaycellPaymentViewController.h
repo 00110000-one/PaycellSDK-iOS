@@ -11,10 +11,11 @@
 #import "PaycellPaymentResponse.h"
 
 typedef NS_ENUM(NSInteger, PaycellErrorCode) {
-    PaycellErrorCodeUserCancelled   = 300,
-    PaycellErrorCodeException       = 500
+    PaycellErrorCodeUserCancelled               = 300,
+    PaycellErrorCodeException                   = 500,
+    PaycellTimeoutCodeException                 = 700,
+    PaycellTimeoutAfterPaymentCodeException     = 900
 };
-
 
 #pragma mark - Delegates and notifications
 
@@ -23,12 +24,13 @@ typedef NS_ENUM(NSInteger, PaycellErrorCode) {
 @protocol PaycellPaymentDelegate <NSObject>
 
 @required
+
+
 - (void)paycellPaymentViewController:(nonnull PaycellPaymentViewController *)paymentViewController
                   didCompletePayment:(nonnull PaycellPaymentResponse *)completedPaymentResponse;
 
 - (void)paycellPaymentError:(nonnull PaycellPaymentViewController *)paymentViewController
                andErrorCode:(PaycellErrorCode)paycellErrorCode;
-
 @end
 
 #pragma mark - Interface

@@ -1,5 +1,16 @@
 Paycell iOS SDK
 ===============
+## -- 0.9.6 -- (04.07.2018)
+
+##### Enhancements
+
+* Hata kodlari duzenlendi.
+* Timeout hata kodu eklendi.
+
+##### Bug Fixes
+
+* None
+
 ## -- 0.9.5 -- (28.03.2018)
 
 ##### Enhancements
