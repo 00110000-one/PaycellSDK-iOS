@@ -1,5 +1,14 @@
 Paycell iOS SDK
 ===============
+## -- 0.9.8 -- (31.01.2019)
+
+##### Enhancements
+
+* Yeni tasarima gecildi.
+
+##### Bug Fixes
+
+* None
 ## -- 0.9.7 -- (18.01.2019)
 
 ##### Enhancements
