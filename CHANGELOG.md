@@ -1,5 +1,14 @@
 Paycell iOS SDK
 ===============
+## -- 0.9.12 -- (16.09.2019)
+
+##### Enhancements
+
+* Bitcode desteklenmeye baslandi.
+
+##### Bug Fixes
+
+* None
 ## -- 0.9.11 -- (16.09.2019)
 
 ##### Enhancements
