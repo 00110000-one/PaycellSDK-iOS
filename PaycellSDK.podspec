@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/Turkcell/PaycellSDK-iOS", :tag => "release/v#{s.version}"}
+  s.source       = { :git => "https://github.com/Turkcell/PaycellSDK-iOS", :branch => "release/v#{s.version}"}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
